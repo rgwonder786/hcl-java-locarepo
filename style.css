@@ -1,12 +1,27 @@
-p{
-    color: blueviolet;
+body{
+    margin: 0px;
+    padding:0px;
 }
-menu
-{
+h2,p{
+    margin: 10pxw;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+ul li{
+    float: left;
+}
+ul li a{
     display: block;
-    list-style: disc;
-    margin-block-start: 1em;
-    margin-block-end:1em;
-    margin-inline-start:0px;
-    margin-inline-start:40px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color: #111111;
 }
