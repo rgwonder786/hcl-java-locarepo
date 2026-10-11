@@ -16,26 +16,36 @@
     </ul>
 
     <p>This is a new Repo.</p>
-    <table>
+<table>
+    <thead>
         <tr>
-            <td>Id</td>
-            <td>Input First</td>
-            <td>Input First</td>
-            <td>Operation</td>
-            <td>Output</td>
+            <th>Id</th>
+            <th>Input First</th>
+            <th>Input Second</th>
+            <th>Operation</th>
+            <th>Output</th>
         </tr>
-        <td>
-            <tr>1</tr>
-            <tr><script>let a = parseInt(prompt("Enter First Num: "));
-                </script></tr>
-            <tr><script>let b = parseInt(prompt("Enter Second Num: "));</script></tr>
-            <tr>+</tr>
-            <tr><script>let c = a + b;
-                        document.write("Sum is: " + c);</script></tr>
-        </td>
-        <td>
-        
-         </td>
-    </table>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td id="first"></td>
+            <td id="second"></td>
+            <td>+</td>
+            <td id="output" class="output"></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+    let a = parseInt(prompt("Enter First Num: "), 10);
+    let b = parseInt(prompt("Enter Second Num: "), 10);
+
+    document.getElementById("first").textContent = a;
+    document.getElementById("second").textContent = b;
+    document.getElementById("output").textContent =
+        "Sum is: " + (a + b);
+</script>
 </body>
 </html>
