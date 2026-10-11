@@ -1,3 +1,12 @@
 p{
     color: blueviolet;
 }
+menu
+{
+    display: block;
+    list-style: disc;
+    margin-block-start: 1em;
+    margin-block-end:1em;
+    margin-inline-start:0px;
+    margin-inline-start:40px;
+}
